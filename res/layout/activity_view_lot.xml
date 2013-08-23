@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".ParkingLotViewActivity"
+    >
+
+    <TextView
+        android:id="@+id/detail_lot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:text="The Parking Lot Name" />
+
+    <TextView
+        android:id="@+id/detail_lot_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detail_lot_name"
+        android:textStyle="italic"
+        android:text="Price:" />
+
+    <TextView
+        android:id="@+id/detail_lot_hours_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detail_lot_price_label"
+        android:layout_marginTop="65dp"
+        android:textStyle="italic"
+        android:text="Hours:" />
+
+    <TextView
+        android:id="@+id/detail_lot_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_lot_hours_label"
+        android:layout_toRightOf="@+id/detail_lot_hours_label"
+        android:text="MTWTF" />
+
+    <TextView
+        android:id="@+id/detail_lot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/detail_lot_price_label"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/detail_lot_hours_label"
+        android:text="$25/hour" />
+
+    <Button
+        android:id="@+id/detail_lot_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Edit" />
+      <Button
+        android:id="@+id/detail_lot_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/detail_lot_edit"
+        android:text="Delete" />
+
+</RelativeLayout>

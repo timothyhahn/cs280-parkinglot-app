@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/lot_name"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:text="The Parking Lot Name"
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/lot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lot_name"
+        android:text="$25/hour" />
+
+</RelativeLayout>
